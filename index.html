@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#073f2d">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#073f2d"
+  >
 
   <title>AKU Palm Oil — Shop Pure Heritage Palm Oil</title>
 
   <meta
     name="description"
-    content="Shop AKU Palm Oil. Pure heritage palm oil in convenient sizes for homes, restaurants and bulk buyers."
+    content="Shop AKU Palm Oil. Premium Nigerian palm oil for homes, restaurants and businesses."
   >
 
   <link rel="stylesheet" href="styles.css">
@@ -17,17 +25,33 @@
 
 <body>
 
+  <!-- =====================================================
+       ANNOUNCEMENT
+       ===================================================== -->
+
   <div class="announcement">
-    PURE HERITAGE PALM OIL · NATURAL · TRUSTED
+    <span>AKU PALM OIL</span>
+    <span>PURE HERITAGE</span>
+    <span>NATURAL</span>
+    <span>TRUSTED</span>
   </div>
 
-  <!-- HEADER -->
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
   <header class="site-header">
 
-    <a class="brand" href="#home" aria-label="AKU Palm Oil home">
+    <a
+      href="#home"
+      class="brand"
+      aria-label="AKU Palm Oil home"
+    >
       <span class="brand-aku">AKU</span>
       <span class="brand-palm">PALM OIL</span>
     </a>
+
 
     <div class="header-actions">
 
@@ -35,82 +59,109 @@
         class="icon-btn"
         id="searchBtn"
         aria-label="Search"
+        type="button"
       >
-        ⌕
+        <span>⌕</span>
       </button>
 
+
       <button
-        class="cart-btn"
+        class="icon-btn cart-btn"
         id="cartBtn"
-        aria-label="Open cart"
+        aria-label="Shopping cart"
+        type="button"
       >
-        <span>Cart</span>
-        <b id="cartCount">0</b>
+        <span>🛒</span>
+
+        <b
+          class="cart-count"
+          id="cartCount"
+        >0</b>
+
       </button>
+
 
       <a
         class="header-order"
         href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20would%20like%20to%20place%20an%20order."
         target="_blank"
-        rel="noopener"
       >
-        Order now
+        Order Now
       </a>
 
     </div>
+
   </header>
 
 
-  <!-- SEARCH -->
-  <div class="search-panel" id="searchPanel">
+  <!-- =====================================================
+       SEARCH
+       ===================================================== -->
 
-    <input
-      id="searchInput"
-      type="search"
-      placeholder="Search palm oil sizes..."
-      autocomplete="off"
-    >
+  <div class="search-panel">
+
+    <div class="search-inner">
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search AKU Palm Oil..."
+        autocomplete="off"
+      >
+
+    </div>
 
   </div>
 
 
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
   <main id="home">
 
-    <!-- HERO -->
-    <section class="hero">
+
+    <!-- ===================================================
+         HERO
+         =================================================== -->
+
+    <section class="shop-hero">
 
       <div class="hero-copy">
 
-        <p class="eyebrow">
-          THE AKU COLLECTION
-        </p>
+        <span class="eyebrow">
+          PURE HERITAGE PALM OIL
+        </span>
 
         <h1>
-          Real palm oil.
+          Rich taste.
           <br>
-          <em>Made to be shared.</em>
+          <span>Real tradition.</span>
         </h1>
 
-        <p class="hero-text">
-          Rich colour, authentic taste and carefully processed
-          palm oil for everyday Nigerian cooking, restaurants
-          and serious kitchens.
+        <p>
+          Premium palm oil made for Nigerian homes,
+          restaurants and kitchens that care about
+          authentic taste.
         </p>
 
         <div class="hero-actions">
 
-          <a class="primary-btn" href="#shop">
+          <a
+            href="#products"
+            class="primary-btn"
+          >
             Shop AKU
             <span>→</span>
           </a>
 
+
           <a
-            class="secondary-btn"
-            href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20need%20help%20choosing%20a%20size."
+            href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20would%20like%20to%20place%20an%20order."
             target="_blank"
-            rel="noopener"
+            class="secondary-btn"
           >
-            Chat on WhatsApp
+            Order on WhatsApp
           </a>
 
         </div>
@@ -130,29 +181,9 @@
 
           <div>
             <strong>03</strong>
-            <span>Home to bulk supply</span>
+            <span>Made for every kitchen</span>
           </div>
 
-        </div>
-
-      </div>
-
-
-      <div class="hero-visual">
-
-        <div class="logo-card">
-
-          <img
-            src="Professional%20Logo%20for%20Aku%20Palm%20Oil%20-%201.png"
-            alt="AKU Palm Oil logo"
-          >
-
-        </div>
-
-        <div class="hero-tag">
-          PURE
-          <br>
-          <b>HERITAGE</b>
         </div>
 
       </div>
@@ -160,134 +191,100 @@
     </section>
 
 
-    <!-- SHOP -->
-    <section
-      class="shop-section"
-      id="shop"
-    >
+    <!-- ===================================================
+         SHOP NAV
+         =================================================== -->
 
-      <div class="section-top">
+    <section class="shop-navigation">
 
-        <div>
+      <div class="shop-title">
 
-          <p class="eyebrow">
-            SHOP AKU
-          </p>
+        <span class="eyebrow">
+          THE AKU COLLECTION
+        </span>
 
-          <h2>
-            Choose your size.
-          </h2>
+        <h2>
+          Choose your size.
+        </h2>
 
-          <p>
-            From everyday cooking to restaurant and bulk supply.
-          </p>
-
-        </div>
-
-
-        <div class="category-pills">
-
-          <button
-            class="pill active"
-            data-filter="all"
-          >
-            All
-          </button>
-
-          <button
-            class="pill"
-            data-filter="home"
-          >
-            Home
-          </button>
-
-          <button
-            class="pill"
-            data-filter="bulk"
-          >
-            Bulk
-          </button>
-
-        </div>
+        <p>
+          From everyday cooking to bulk supply,
+          choose the AKU size that works for you.
+        </p>
 
       </div>
 
 
-      <div
-        class="product-grid"
-        id="productGrid"
-      >
+      <div class="category-pills">
+
+        <button
+          class="pill active"
+          data-filter="all"
+          type="button"
+        >
+          All
+        </button>
+
+        <button
+          class="pill"
+          data-filter="small"
+          type="button"
+        >
+          Everyday
+        </button>
+
+        <button
+          class="pill"
+          data-filter="family"
+          type="button"
+        >
+          Family
+        </button>
+
+        <button
+          class="pill"
+          data-filter="bulk"
+          type="button"
+        >
+          Bulk
+        </button>
+
+      </div>
+
+    </section>
 
 
-        <!-- 75CL -->
+    <!-- ===================================================
+         PRODUCTS
+         =================================================== -->
+
+    <section
+      class="products-section"
+      id="products"
+    >
+
+      <div class="product-grid">
+
+
+        <!-- =================================================
+             1 LITRE
+             ================================================= -->
+
         <article
           class="product-card"
-          data-category="home"
-          data-name="75cl palm oil"
+          data-size="small"
         >
 
           <div class="product-image">
 
-            <span class="badge">
-              POPULAR
+            <span class="product-badge">
+              EVERYDAY
             </span>
 
             <img
               src="5FF6924E-8FF0-4184-97F5-38931B2B46DA.png"
-              alt="AKU Palm Oil 75cl"
-              loading="lazy"
-            >
-
-          </div>
-
-
-          <div class="product-info">
-
-            <p class="size-label">
-              75 CL
-            </p>
-
-            <h3>
-              AKU Palm Oil
-            </h3>
-
-            <p>
-              A convenient everyday cooking size.
-            </p>
-
-            <div class="product-bottom">
-
-              <strong>
-                Contact for price
-              </strong>
-
-              <button
-                class="add-btn"
-                data-product="75cl"
-              >
-                Add
-              </button>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <!-- 1 LITRE -->
-        <article
-          class="product-card"
-          data-category="home"
-          data-name="1 litre palm oil"
-        >
-
-          <div class="product-image">
-
-            <img
-              src="15576FB6-156F-45C5-89E8-86CD2FB48763.png"
               alt="AKU Palm Oil 1 Litre"
-              loading="lazy"
+              loading="eager"
             >
 
           </div>
@@ -295,16 +292,16 @@
 
           <div class="product-info">
 
-            <p class="size-label">
+            <span class="product-size">
               1 LITRE
-            </p>
+            </span>
 
             <h3>
               AKU Palm Oil
             </h3>
 
             <p>
-              Perfect for everyday family cooking.
+              Perfect for everyday cooking.
             </p>
 
             <div class="product-bottom">
@@ -314,10 +311,18 @@
               </strong>
 
               <button
-                class="add-btn"
-                data-product="1L"
+                type="button"
+                class="product-button"
+                onclick="addToCart({
+                  id:'aku-1l',
+                  name:'AKU Palm Oil',
+                  size:'1 Litre',
+                  price:3500,
+                  image:'5FF6924E-8FF0-4184-97F5-38931B2B46DA.png'
+                })"
               >
-                Add
+                Add to cart
+                <span>+</span>
               </button>
 
             </div>
@@ -327,16 +332,18 @@
         </article>
 
 
-        <!-- 5 LITRES -->
+        <!-- =================================================
+             5 LITRES
+             ================================================= -->
+
         <article
-          class="product-card featured"
-          data-category="home"
-          data-name="5 litres palm oil"
+          class="product-card featured-product"
+          data-size="family"
         >
 
           <div class="product-image">
 
-            <span class="badge">
+            <span class="product-badge">
               BEST SELLER
             </span>
 
@@ -351,16 +358,17 @@
 
           <div class="product-info">
 
-            <p class="size-label">
+            <span class="product-size">
               5 LITRES
-            </p>
+            </span>
 
             <h3>
               AKU Palm Oil
             </h3>
 
             <p>
-              The ideal family and everyday supply size.
+              The ideal family and everyday
+              supply size.
             </p>
 
             <div class="product-bottom">
@@ -370,10 +378,18 @@
               </strong>
 
               <button
-                class="add-btn"
-                data-product="5L"
+                type="button"
+                class="product-button"
+                onclick="addToCart({
+                  id:'aku-5l',
+                  name:'AKU Palm Oil',
+                  size:'5 Litres',
+                  price:15500,
+                  image:'05048BC9-559B-45CC-90D1-89576104A9A2.png'
+                })"
               >
-                Add
+                Add to cart
+                <span>+</span>
               </button>
 
             </div>
@@ -383,17 +399,19 @@
         </article>
 
 
-        <!-- 25 LITRES -->
+        <!-- =================================================
+             25 LITRES
+             ================================================= -->
+
         <article
-          class="product-card"
-          data-category="bulk"
-          data-name="25 litres palm oil"
+          class="product-card bulk-product"
+          data-size="bulk"
         >
 
           <div class="product-image">
 
-            <span class="badge bulk-badge">
-              BULK
+            <span class="product-badge">
+              BULK SUPPLY
             </span>
 
             <img
@@ -407,16 +425,17 @@
 
           <div class="product-info">
 
-            <p class="size-label">
+            <span class="product-size">
               25 LITRES
-            </p>
+            </span>
 
             <h3>
               AKU Palm Oil
             </h3>
 
             <p>
-              Built for restaurants, businesses and bulk buyers.
+              Built for restaurants, caterers
+              and serious household supply.
             </p>
 
             <div class="product-bottom">
@@ -426,10 +445,18 @@
               </strong>
 
               <button
-                class="add-btn"
-                data-product="25L"
+                type="button"
+                class="product-button"
+                onclick="addToCart({
+                  id:'aku-25l',
+                  name:'AKU Palm Oil',
+                  size:'25 Litres',
+                  price:58000,
+                  image:'D72F9DAE-C44A-49A8-9386-DE6A245B2FF1.png'
+                })"
               >
-                Add
+                Add to cart
+                <span>+</span>
               </button>
 
             </div>
@@ -439,63 +466,128 @@
         </article>
 
 
+        <!-- =================================================
+             75 CL
+             ================================================= -->
+
+        <article
+          class="product-card"
+          data-size="small"
+        >
+
+          <div class="product-image">
+
+            <span class="product-badge">
+              NEW
+            </span>
+
+            <img
+              src="15576FB6-156F-4505-89E8-86CD2FB48763.png"
+              alt="AKU Palm Oil 75cl"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <div class="product-info">
+
+            <span class="product-size">
+              75 CL
+            </span>
+
+            <h3>
+              AKU Palm Oil
+            </h3>
+
+            <p>
+              Convenient size for everyday meals.
+            </p>
+
+            <div class="product-bottom">
+
+              <strong>
+                Shop now
+              </strong>
+
+              <button
+                type="button"
+                class="product-button"
+                onclick="addToCart({
+                  id:'aku-75cl',
+                  name:'AKU Palm Oil',
+                  size:'75cl',
+                  price:0,
+                  image:'15576FB6-156F-4505-89E8-86CD2FB48763.png'
+                })"
+              >
+                Add to cart
+                <span>+</span>
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </div>
 
     </section>
 
 
-    <!-- BRAND STORY -->
-    <section class="story">
+    <!-- ===================================================
+         BRAND STORY
+         =================================================== -->
 
-      <div class="story-inner">
+    <section
+      class="brand-story"
+      id="about"
+    >
 
-        <p class="eyebrow">
-          THE AKU STANDARD
-        </p>
-
-        <h2>
-          Tradition,
-          <span>made modern.</span>
-        </h2>
-
-        <p>
-          AKU Palm Oil brings the richness of traditional
-          palm oil together with a clean, modern experience
-          designed for today's homes, restaurants and businesses.
-        </p>
-
+      <div class="story-label">
+        THE AKU STANDARD
       </div>
+
+      <h2>
+        Tradition,
+        <span>made modern.</span>
+      </h2>
+
+      <p>
+        AKU Palm Oil brings the richness of traditional
+        Nigerian palm oil together with a clean,
+        modern shopping experience designed for
+        today's homes, restaurants and businesses.
+      </p>
 
     </section>
 
 
-    <!-- BULK CTA -->
-    <section class="bulk-cta">
+    <!-- ===================================================
+         CONTACT
+         =================================================== -->
 
-      <div>
+    <section
+      class="contact-section"
+      id="contact"
+    >
 
-        <p class="eyebrow">
-          RESTAURANTS · RETAILERS · BULK BUYERS
-        </p>
+      <span class="eyebrow">
+        READY TO ORDER?
+      </span>
 
-        <h2>
-          Buying for your business?
-        </h2>
-
-        <p>
-          Talk to AKU about bulk quantities and supply.
-        </p>
-
-      </div>
-
+      <h2>
+        Bring AKU<br>
+        into your kitchen.
+      </h2>
 
       <a
-        href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20am%20interested%20in%20bulk%20supply."
+        href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20would%20like%20to%20place%20an%20order."
         target="_blank"
-        rel="noopener"
-        class="bulk-btn"
+        class="primary-btn"
       >
-        Talk to AKU
+        Order on WhatsApp
         <span>→</span>
       </a>
 
@@ -504,28 +596,39 @@
   </main>
 
 
-  <!-- CART -->
+  <!-- =====================================================
+       CART OVERLAY
+       ===================================================== -->
+
+  <div class="cart-overlay"></div>
+
+
+  <!-- =====================================================
+       CART DRAWER
+       ===================================================== -->
+
   <aside
     class="cart-drawer"
-    id="cartDrawer"
-    aria-hidden="true"
+    aria-label="Shopping cart"
   >
 
     <div class="cart-header">
 
       <div>
-        <p class="eyebrow">
-          YOUR ORDER
-        </p>
+        <span class="eyebrow">
+          YOUR AKU ORDER
+        </span>
 
         <h2>
-          Cart
+          Shopping cart
         </h2>
       </div>
+
 
       <button
         id="closeCart"
         class="close-btn"
+        type="button"
         aria-label="Close cart"
       >
         ×
@@ -534,22 +637,18 @@
     </div>
 
 
-    <div
-      class="cart-items"
-      id="cartItems"
-    >
-    </div>
+    <div class="cart-items"></div>
 
 
     <div class="cart-footer">
 
-      <div class="cart-total">
+      <div class="cart-total-row">
 
         <span>
           Total
         </span>
 
-        <strong id="cartTotal">
+        <strong class="cart-total">
           ₦0
         </strong>
 
@@ -557,8 +656,8 @@
 
 
       <button
-        id="checkoutBtn"
         class="checkout-btn"
+        type="button"
       >
         Continue on WhatsApp
         <span>→</span>
@@ -569,60 +668,9 @@
   </aside>
 
 
-  <div
-    class="cart-overlay"
-    id="cartOverlay"
-  ></div>
-
-
-  <!-- MOBILE NAV -->
-  <nav class="mobile-nav">
-
-    <a href="#home">
-      <span>⌂</span>
-      Home
-    </a>
-
-    <a href="#shop">
-      <span>▦</span>
-      Shop
-    </a>
-
-    <button id="mobileCart">
-      <span>🛒</span>
-      Cart
-      <b id="mobileCartCount">0</b>
-    </button>
-
-    <a
-      href="https://wa.me/2347062103875"
-      target="_blank"
-      rel="noopener"
-    >
-      <span>◉</span>
-      Chat
-    </a>
-
-  </nav>
-
-
-  <footer>
-
-    <div class="footer-brand">
-      AKU
-      <span>PALM OIL</span>
-    </div>
-
-    <p>
-      Rich in taste. Rich in tradition.
-    </p>
-
-    <p>
-      © 2026 AKU Palm Oil.
-    </p>
-
-  </footer>
-
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
 
   <script src="script.js"></script>
 
