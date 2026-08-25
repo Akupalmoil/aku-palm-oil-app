@@ -657,3 +657,359 @@ footer {
   }
 
 }
+
+/* =========================================================
+   AKU PREMIUM WHATSAPP ORDER MODAL
+   ========================================================= */
+
+body.order-modal-open {
+  overflow: hidden;
+}
+
+.aku-order-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+
+.aku-order-modal.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.aku-order-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 25, 19, .62);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.aku-order-panel {
+  position: relative;
+  z-index: 2;
+  width: min(520px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+
+  background: #fffefa;
+  color: #123c2c;
+
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 28px;
+
+  padding: 34px;
+
+  box-shadow:
+    0 35px 100px rgba(0,0,0,.25),
+    0 8px 30px rgba(0,0,0,.12);
+
+  transform: translateY(18px) scale(.97);
+  transition: transform .3s cubic-bezier(.2,.8,.2,1);
+}
+
+.aku-order-modal.is-open .aku-order-panel {
+  transform: translateY(0) scale(1);
+}
+
+.aku-order-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 42px;
+  height: 42px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #f1f0eb;
+  color: #123c2c;
+
+  font-size: 27px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+}
+
+.aku-order-close:hover {
+  background: #e5e3dc;
+  transform: rotate(5deg);
+}
+
+.aku-order-eyebrow {
+  color: #b51d25;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.aku-order-panel h2 {
+  margin: 0;
+  padding-right: 45px;
+
+  font-size: clamp(32px, 7vw, 48px);
+  line-height: 1;
+  letter-spacing: -2.5px;
+  color: #103e2d;
+}
+
+.aku-order-intro {
+  color: #6d7872;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 16px 0 28px;
+}
+
+.aku-order-panel label {
+  display: block;
+
+  margin: 20px 0 8px;
+
+  color: #123c2c;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.aku-order-panel label span {
+  color: #8b948e;
+  font-weight: 500;
+}
+
+#aku-order-size,
+#aku-order-quantity,
+#aku-order-note {
+  width: 100%;
+
+  border: 1px solid #dedbd3;
+  border-radius: 13px;
+
+  background: #fff;
+  color: #173d2e;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+#aku-order-size {
+  height: 54px;
+  padding: 0 15px;
+}
+
+#aku-order-quantity {
+  height: 54px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#aku-order-note {
+  min-height: 100px;
+  resize: vertical;
+  padding: 14px;
+  line-height: 1.5;
+}
+
+#aku-order-size:focus,
+#aku-order-quantity:focus,
+#aku-order-note:focus {
+  border-color: #07583e;
+  box-shadow: 0 0 0 4px rgba(7,88,62,.08);
+}
+
+.aku-quantity-row {
+  display: grid;
+  grid-template-columns: 54px 1fr 54px;
+  gap: 8px;
+}
+
+.aku-quantity-button {
+  height: 54px;
+
+  border: 1px solid #dedbd3;
+  border-radius: 13px;
+
+  background: #f5f4ef;
+  color: #123c2c;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+}
+
+.aku-quantity-button:hover {
+  background: #e9e7df;
+}
+
+.aku-whatsapp-button {
+  width: 100%;
+  margin-top: 25px;
+
+  min-height: 58px;
+
+  border: 0;
+  border-radius: 15px;
+
+  background: #07583e;
+  color: white;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  box-shadow: 0 12px 25px rgba(7,88,62,.18);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+.aku-whatsapp-button span {
+  font-size: 21px;
+}
+
+.aku-whatsapp-button:hover {
+  background: #064a35;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(7,88,62,.24);
+}
+
+.aku-whatsapp-button:active {
+  transform: translateY(0);
+}
+
+.aku-order-small {
+  text-align: center;
+
+  color: #89918c;
+  font-size: 11px;
+
+  margin: 14px 0 0;
+}
+
+
+/* =========================================================
+   PREMIUM SCROLL REVEALS
+   ========================================================= */
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+
+  transition:
+    opacity .7s ease,
+    transform .7s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE ORDER EXPERIENCE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .aku-order-modal {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .aku-order-panel {
+    width: 100%;
+    max-height: calc(100vh - 24px);
+
+    padding: 28px 20px 22px;
+
+    border-radius: 26px 26px 20px 20px;
+
+    transform: translateY(30px);
+  }
+
+  .aku-order-modal.is-open .aku-order-panel {
+    transform: translateY(0);
+  }
+
+  .aku-order-close {
+    top: 14px;
+    right: 14px;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 24px;
+  }
+
+  .aku-order-eyebrow {
+    font-size: 10px;
+  }
+
+  .aku-order-panel h2 {
+    font-size: 36px;
+    letter-spacing: -2px;
+  }
+
+  .aku-order-intro {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .aku-order-panel label {
+    margin-top: 16px;
+  }
+
+  .aku-whatsapp-button {
+    min-height: 56px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .aku-order-modal,
+  .aku-order-panel,
+  .aku-whatsapp-button,
+  .reveal-on-scroll {
+    transition: none;
+  }
+
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
