@@ -1089,3 +1089,34 @@ body {
     min-width: 0;
   }
 }
+
+/* AKU HEADER LOGO */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 58px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.navbar .logo img {
+  display: block;
+  width: 120px;
+  height: 58px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Mobile header */
+@media (max-width: 600px) {
+  .navbar .logo {
+    width: 105px;
+    height: 54px;
+  }
+
+  .navbar .logo img {
+    width: 105px;
+    height: 54px;
+  }
+}
