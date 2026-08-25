@@ -1013,3 +1013,79 @@ body.order-modal-open {
     transform: none;
   }
 }
+
+/* =========================================================
+   AKU PALM OIL — FAST IMAGE & PRODUCT DISPLAY
+   ========================================================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Product images */
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* Prevent layout jumping while images load */
+.product-card {
+  overflow: hidden;
+}
+
+.product-card img {
+  aspect-ratio: 1 / 1;
+}
+
+/* Hero/product showcase images */
+.hero img,
+.hero-product img,
+.product-showcase img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Smoother image loading */
+img[loading="lazy"] {
+  content-visibility: auto;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .product-card img {
+    max-height: 360px;
+    object-fit: contain;
+  }
+
+  .hero img,
+  .hero-product img,
+  .product-showcase img {
+    max-height: 520px;
+    object-fit: contain;
+  }
+}
+
+/* Prevent horizontal overflow */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Better mobile product cards */
+@media (max-width: 600px) {
+  .products-grid,
+  .product-grid {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .product-card {
+    min-width: 0;
+  }
+}
